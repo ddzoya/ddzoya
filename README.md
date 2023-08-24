@@ -12,6 +12,7 @@
 2|3|
 
 #Зайцы
+#Nikita
 
 <!---
 ddzoya/ddzoya is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
