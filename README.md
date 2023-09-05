@@ -5,14 +5,7 @@
 - 💞️ I’m looking to collaborate
 - 📫 My mail ddzoya23@gmail.com
 
-![Зайчик](https://kartinkin.net/uploads/posts/2022-03/1646514507_71-kartinkin-net-p-kartinki-s-zaichikami-73.jpg)
 
-|Колличество|размер|
-:----|:----:|---:
-2|3|
-
-#Зайцы
-#Nikita
 
 <!---
 ddzoya/ddzoya is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
