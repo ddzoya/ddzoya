@@ -1,0 +1,154 @@
+using System;
+using System.Collections.Generic;
+class HelloWorld {
+  static void Main() {
+    string firstRow = Console.ReadLine();
+    string secondRow = Console.ReadLine();
+    
+    ushort countGuns = ushort.Parse(firstRow.Split(' ')[0]);
+    uint moneyJoe = uint.Parse(firstRow.Split(' ')[1]);
+    
+    int resultPrice = 0;
+    
+    List<int> pricesGuns = new List<int>();
+    
+    for (int i = 0 ; i < countGuns; i++)
+    {
+        pricesGuns.Add(int.Parse(secondRow.Split(' ')[i]));
+    }
+    
+    foreach(int price in pricesGuns)
+    {
+        if ((price <= moneyJoe) && (price > resultPrice))
+        {
+            resultPrice = price;
+        }
+    }
+    
+    Console.WriteLine(resultPrice);
+  }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class HelloWorld {
+  static void Main() {
+    string firstRow = Console.ReadLine();
+    firstRow = firstRow.ToLower();
+
+    int countS = firstRow.Split('s').Length - 1;
+    int countH = firstRow.Split('h').Length - 1;
+    int countE = firstRow.Split('e').Length - 1;
+    int countR = firstRow.Split('r').Length - 1;
+    int countI = firstRow.Split('i').Length - 1;
+    int countF = firstRow.Split('f').Length - 1;
+    
+    int[] letters = new int[] {countS, countH, countE, countR, countI, countF/2};
+    int minCountLetters = letters.Min();
+    Console.WriteLine(minCountLetters);
+  }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class HelloWorld {
+  static void Main() {
+    string firstRow = Console.ReadLine();
+    string secondRow = Console.ReadLine();
+    string thirdRow = Console.ReadLine();
+    
+    ushort countCards = ushort.Parse(firstRow);
+    
+    int fisrtDifferentNumber = -1;
+    int lastDifferentNumber = -1;
+    
+    string result = "YES";
+    
+    List<int> joeCards = new List<int>();
+    List<int> successCards = new List<int>();
+    
+    for (int i = 0 ; i < countCards; i++)
+    {
+        joeCards.Add(int.Parse(secondRow.Split(' ')[i]));
+        successCards.Add(int.Parse(thirdRow.Split(' ')[i]));
+    }
+    
+    for (int i = 0 ; i < countCards; i++)
+    {
+        if(joeCards[i] != successCards[i])
+        {
+            if (fisrtDifferentNumber == -1)
+            {
+                fisrtDifferentNumber = i;
+            }
+            lastDifferentNumber = i;
+        }
+        
+        if (!joeCards.Contains(successCards[i]))
+        {
+            result = "NO";
+        }
+    }
+    
+    if (fisrtDifferentNumber !=-1 && lastDifferentNumber !=-1)
+    {
+        for (int i = fisrtDifferentNumber ; i < lastDifferentNumber; i++)
+        {
+            if ( i<= countCards - 1)
+            {
+                if(successCards[i]>successCards[i+1])
+                {
+                    result = "NO";
+                }
+            }
+        }
+    }
+    else
+    {
+        result = "YES";
+    }
+    
+    Console.WriteLine(result);
+  }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class HelloWorld {
+  static void Main() {
+    string firstRow = Console.ReadLine();
+    string secondRow = Console.ReadLine();
+    
+    int moneyJoe = ushort.Parse(firstRow.Split(' ')[0]);
+    int countNominalo = uint.Parse(firstRow.Split(' ')[1]);
+    
+    List<int> nominalos = new List<int>();
+    
+    for (int i = 0 ; i < countNominalo; i++)
+    {
+        nominalos.Add(int.Parse(secondRow.Split(' ')[i]));
+    }
+    
+    int total = monValues.Sum(x => x);
+    
+    if (total > moneyJoe)
+    {
+        Console.WriteLine(-1);
+    }
+    
+    if (total >= moneyJoe)
+    {
+        
+    }
+  }
+}
