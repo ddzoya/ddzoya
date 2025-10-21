@@ -1,9 +1,8 @@
 
-- 👋 Hi, I’m @ddzoya
-- 👀 I’m interested in testing
-- 🌱 I’m currently studying and taking courses
-- 💞️ I’m looking to collaborate
-- 📫 My mail ddzoya23@gmail.com
+- 👋 Hello, I'm Zoya
+- 👀 I am an IT-recruiter
+- 💞️I invite you to cooperation
+- 📫 My email is ddzoya23@gmail.com
 
 
 
